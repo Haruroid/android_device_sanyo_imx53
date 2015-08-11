@@ -1,2 +1,2 @@
-add_lunch_combo 40TL04-eng
-add_lunch_combo 40TL04-user
+add_lunch_combo full_40TL04-eng
+add_lunch_combo full_40TL04-user

@@ -4,7 +4,7 @@
 $(call inherit-product, device/fsl/imx5x/imx5x.mk)
 
 # Overrides
-PRODUCT_NAME := 40TL04
+PRODUCT_NAME := full_40TL04
 PRODUCT_DEVICE := 40TL04
 
 PRODUCT_COPY_FILES += \
@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG += sw600dp
 PRODUCT_PREF_AAPT_CONFIG := sw600dp
 
-DEVICE_PACKAGE_OVERLAYS := device/fsl/imx53_smd/overlay
+DEVICE_PACKAGE_OVERLAYS := device/fsl/40TL04/overlay
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 

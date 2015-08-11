@@ -27,4 +27,4 @@
 # Copied from build/target/product/AndroidProducts.mk
 
 PRODUCT_MAKEFILES := \
-  $(LOCAL_DIR)/imx53_smd.mk
+  $(LOCAL_DIR)/full_40TL04.mk
