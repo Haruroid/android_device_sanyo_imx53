@@ -22,34 +22,17 @@
   <item name="none">0</item>
   <item name="screen.on">256</item>
   <item name="screen.full">318</item>
-  <item name="bluetooth.active">14.0</item>
-      <!--
-      Bluetooth stereo audio playback                          14.0 mA
-      -->
-  <item name="bluetooth.on">1.4</item>
-      <!--
-      I measured the following value                            1.4 mA
-      but there is a GPIO fix pending that should
-      bring this down to                                        0.2 mA
-      -->
   <item name="wifi.on">2.9</item>
   <item name="wifi.active">31.0</item>
   <item name="wifi.scan">6.5</item>
   <item name="dsp.audio">14.1</item>
   <item name="dsp.video">54.0</item>
-  <item name="gps.on">29.7</item>
-  <item name="radio.active">71.5</item>
-  <item name="radio.scanning">1.2</item>
-  <array name="radio.on"> <!-- Strength 0 to BINS-1 (4) -->
-      <value>1.2</value>
-  </array>
       <!-- Different CPU speeds as reported in
        /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state -->
   <array name="cpu.speeds">
       <value>400000</value>  <!-- 400 MHz -->
       <value>800000</value>  <!-- 800 MHz -->
       <value>1000000</value> <!--   1 GHz -->
-      <value>1200000</value> <!-- 1.2 GHz -->
   </array>
   <!-- Power consumption when CPU is idle -->
   <item name="cpu.idle">3.8</item>
@@ -59,11 +42,10 @@
       <value>116</value> <!-- 400 MHz -->
       <value>138</value> <!-- 800 MHz -->
       <value>148</value> <!--   1 GHz -->
-      <value>154</value> <!-- 1.2 GHz -->
   </array>
   <!-- This is the battery capacity in mAh -->
-  <item name="battery.capacity">4000</item>
+  <item name="battery.capacity">2180</item>
       <!--
-      Battery capacity is 4000 mAH (at 11.1 Volts)
+      Battery capacity is 2180 mAH (at 11.1 Volts)
       -->
 </device>
