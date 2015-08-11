@@ -1,0 +1,22 @@
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(BOARD_HAS_SENSOR_MMA3112), true)
+include $(CLEAR_VARS)
+LOCAL_MODULE := magd.conf
+LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/
+LOCAL_SRC_FILES := magd.conf
+include $(BUILD_PREBUILT)
+
+ifeq ($(USE_PREBUILD_MAGD), true)
+include $(CLEAR_VARS)
+LOCAL_MODULE := magd
+LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_PATH := $(TARGET_OUT)/bin
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES := magd
+LOCAL_MODULE_TAGS := eng
+include $(BUILD_PREBUILT)
+endif
+endif #ifeq($(BOARD_HAS_SENSOR_MMA3112), true)
