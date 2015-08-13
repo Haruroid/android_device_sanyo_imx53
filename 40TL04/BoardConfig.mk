@@ -14,22 +14,22 @@ PRODUCT_MODEL := 40TL04
 
 # Wifi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-WPA_SUPPLICANT_VERSION := VER_0_8_X
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mrvl8787
-BOARD_HOSTAPD_DRIVER := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mrvl8787
-BOARD_WLAN_DEVICE := mrvl8787
+WPA_SUPPLICANT_VERSION := VER_0_6_X
+#BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mrvl8787
+#BOARD_HOSTAPD_DRIVER := NL80211
+#BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mrvl8787
+#BOARD_WLAN_DEVICE := mrvl8787
 BOARD_WLAN_VENDOR := MRVL
-WIFI_SDIO_IF_DRIVER_MODULE_PATH  := "/system/wifi/mlan.ko"
-WIFI_SDIO_IF_DRIVER_MODULE_NAME  := "mlan"
-WIFI_SDIO_IF_DRIVER_MODULE_ARG   := ""
 WIFI_DRIVER_MODULE_PATH := "/system/wifi/sd8787.ko"
-WIFI_DRIVER_MODULE_NAME := "sd8787"
-WIFI_DRIVER_MODULE_ARG  := "drv_mode=5 cfg80211_wext=0xc sta_name=wlan uap_name=wlan wfd_name=p2p max_uap_bss=1 fw_name=mrvl/sd8787_uapsta.bin"
-WIFI_DRIVER_FW_PATH_PARAM := "/proc/mwlan/config"
-WIFI_DRIVER_FW_PATH_STA := "drv_mode=5"
-WIFI_DRIVER_FW_PATH_AP :=  "drv_mode=6"
-WIFI_DRIVER_FW_PATH_P2P := "drv_mode=5"
+WIFI_DRIVER_MODULE_NAME	:= "sd8787"
+WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/wifi/sd8787_uapsta.bin cfg80211_wext=12 sta_name=wlan uap_name=wlan wfd_name=p2p fw_name=sd8787_uapsta.bin"
+WIFI_DRIVER_FW_PATH_STA := "/system/etc/wifi/sd8787_uapsta.bin"
+WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/sd8787_uapsta.bin"
+WIFI_DRIVER_FW_PATH_P2P := "/system/etc/wifi/sd8787_uapsta.bin"
+WIFI_SDIO_IF_DRIVER_MODULE_PATH := "/system/wifi/mlan.ko"
+WIFI_SDIO_IF_DRIVER_MODULE_NAME := "mlan"
+WIFI_SDIO_IF_DRIVER_MODULE_ARG := ""
+MRVL_WIRELESS_DAEMON_API := true"
 
 
 BOARD_HAVE_VPU := true
