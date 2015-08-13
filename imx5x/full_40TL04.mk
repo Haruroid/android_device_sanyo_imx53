@@ -16,6 +16,7 @@ PRODUCT_COPY_FILES += \
 	device/fsl/40TL04/wifi/mlan.ko:system/wifi/mlan.ko \
 	device/fsl/40TL04/wifi/sd8787.ko:system/wifi/sd8787.ko \
 	device/fsl/40TL04/wifi/sd8787_uapsta.bin:system/wifi/sd8787_uapsta.bin \
+	device/fsl/40TL04/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	device/fsl/proprietary/pppoe/etc/init.pppoe-pppd:system/etc/init.pppoe-pppd
 
 PRODUCT_COPY_FILES += \
